@@ -1,0 +1,130 @@
+[
+  [
+    {
+      "fieldName": "First Name",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PNewContactInfo$pFirstName']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Middle Name",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PNewContactInfo$pMiddleName']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Last Name",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PNewContactInfo$pLastName']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Title",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PNewContactInfo$pContactOrganization']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Street1",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PNewContactInfo$pStreet1']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Street2",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PNewContactInfo$pStreet2']"
+    }
+  ],
+  [
+    {
+      "fieldName": "City",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PNewContactInfo$pCity']"
+    }
+  ],
+  [
+    {
+      "fieldName": "State",
+      "value": "District of Columbia",
+      "locator": "xpath",
+      "expression": "//select[@name='$PNewContactInfo$pState']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Zip Code",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PNewContactInfo$pZipCodePostal']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Country",
+      "value": "United States",
+      "locator": "xpath",
+      "expression": "//select[@name='$PNewContactInfo$pCountry']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Preferred Phone: Business Phone",
+      "value": "true",
+      "locator": "xpath",
+      "expression": "//input[@value='Business Phone']//parent::span//label[contains(@class,'radioLabel')]"
+    }
+  ],
+  [
+    {
+      "fieldName": "Preferred Phone: Mobile Phone",
+      "value": "false",
+      "locator": "xpath",
+      "expression": "//input[@value='Mobile Phone']//parent::span//label[contains(@class,'radioLabel')]"
+    }
+  ],
+  [
+    {
+      "fieldName": "Business Phone Number",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PNewContactInfo$pBusinessPhoneNumber']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Mobile Phone Number",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PNewContactInfo$pPhoneNumber']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Telephone Extension",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PNewContactInfo$pPhoneExtension']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Email Address",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PNewContactInfo$pEmailAddress']"
+    }
+  ]
+]

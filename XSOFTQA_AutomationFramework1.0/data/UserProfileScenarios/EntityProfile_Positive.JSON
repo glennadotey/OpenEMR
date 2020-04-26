@@ -1,0 +1,162 @@
+[
+  [
+    {
+      "fieldName": "Physical Address: Street1",
+      "value": "810 7th Street NW",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempEntity$pEntity$pAddress$l2$pStreet1']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Physical Address: Street2",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempEntity$pEntity$pAddress$l2$pStreet2']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Physical Address: City",
+      "value": "Washington, D.C.",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempEntity$pEntity$pAddress$l2$pCity']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Physical Address: State",
+      "value": "District of Columbia",
+      "locator": "xpath",
+      "expression": "//select[@name='$PTempEntity$pEntity$pAddress$l2$pState']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Physical Address: Zip Code",
+      "value": "20001",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempEntity$pEntity$pAddress$l2$pZipCode']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Physical Address: Country",
+      "value": "United States",
+      "locator": "xpath",
+      "expression": "//select[@name='$PTempEntity$pEntity$pAddress$l2$pCountry']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Physical Address: County",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempEntity$pEntity$pAddress$l2$pCounty']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Physical Address: Province",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempEntity$pEntity$pAddress$l2$pProvince']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Physical Address: Congressional District",
+      "value": "22",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempEntity$pEntity$pAddress$l2$pCongressionalDistrict']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Physical Address: Legal Address Checkbox",
+      "value": "true",
+      "locator": "xpath",
+      "expression": "//label[contains(text(),'Designate as Legal Address')]//parent::span[@class='checkbox']//input[@type='checkbox']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Mailing Address: Street1",
+      "value": "810 7th Street NW",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempEntity$pEntity$pAddress$l1$pStreet1']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Mailing Address: Street2",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempEntity$pEntity$pAddress$l1$pStreet2']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Mailing Address: City",
+      "value": "Washington, D.C.",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempEntity$pEntity$pAddress$l1$pCity']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Mailing Address: State",
+      "value": "District of Columbia",
+      "locator": "xpath",
+      "expression": "//select[@name='$PTempEntity$pEntity$pAddress$l1$pState']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Mailing Address: Zip Code",
+      "value": "20001",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempEntity$pEntity$pAddress$l1$pZipCode']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Mailing Address: Country",
+      "value": "United States",
+      "locator": "xpath",
+      "expression": "//select[@name='$PTempEntity$pEntity$pAddress$l1$pCountry']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Mailing Address: County",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempEntity$pEntity$pAddress$l1$pCounty']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Mailing Address: Province",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempEntity$pEntity$pAddress$l1$pProvince']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Mailing Address: Congressional District",
+      "value": "22",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempEntity$pEntity$pAddress$l1$pCongressionalDistrict']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Mailing Address: Legal Address Checkbox",
+      "value": "false",
+      "locator": "xpath",
+      "expression": "//label[contains(text(),'Designate as Legal Address')]//parent::span[@class='checkbox']//input[@type='checkbox']"
+    }
+  ]
+]

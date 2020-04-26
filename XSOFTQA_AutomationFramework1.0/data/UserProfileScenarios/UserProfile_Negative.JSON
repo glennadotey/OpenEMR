@@ -1,0 +1,146 @@
+[
+  [
+    {
+      "fieldName": "Prefix",
+      "value": "Select...",
+      "locator": "xpath",
+      "expression": "//select[@name='$PTempOperator$pContactInfo$pPrefixName']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Middle Name",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempOperator$pContactInfo$pMiddleName']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Suffix Name",
+      "value": "Select...",
+      "locator": "xpath",
+      "expression": "//select[@name='$PTempOperator$pContactInfo$pSuffixName']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Title",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempOperator$pContactInfo$pRepresentativeTitle']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Street1",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempOperator$pJGITSAddress$pStreet1']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Street2",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempOperator$pJGITSAddress$pStreet2']"
+    }
+  ],
+  [
+    {
+      "fieldName": "City",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempOperator$pJGITSAddress$pCity']"
+    }
+  ],
+  [
+    {
+      "fieldName": "State",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//select[@name='$PTempOperator$pJGITSAddress$pState']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Zip Code",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempOperator$pJGITSAddress$pZipCode']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Country",
+      "value": "United States",
+      "locator": "xpath",
+      "expression": "//select[@name='$PTempOperator$pJGITSAddress$pCountry']"
+    }
+  ],
+  [
+    {
+      "fieldName": "County",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempOperator$pJGITSAddress$pCounty']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Province",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempOperator$pJGITSAddress$pProvince']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Preferred Phone: Business Phone",
+      "value": "true",
+      "locator": "xpath",
+      "expression": "//input[@value='Business Phone']//parent::span//label[contains(@class,'radioLabel')]"
+    }
+  ],
+  [
+    {
+      "fieldName": "Preferred Phone: Mobile Phone",
+      "value": "false",
+      "locator": "xpath",
+      "expression": "//input[@value='Mobile Phone']//parent::span//label[contains(@class,'radioLabel')]"
+    }
+  ],
+  [
+    {
+      "fieldName": "Business Phone Number",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempOperator$ppyTelephone']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Mobile Phone Number",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempOperator$pMobilePhoneNumber']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Telephone Extension",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempOperator$pJGITSAddress$pTelephoneExtension']"
+    }
+  ],
+  [
+    {
+      "fieldName": "Fax Number",
+      "value": "",
+      "locator": "xpath",
+      "expression": "//input[@name='$PTempOperator$pJGITSAddress$pFaxNumber']"
+    }
+  ]
+]
