@@ -9,7 +9,7 @@ package com.xsoftqa.autotest.stepdefinitions;
 
 public class AutomatedTestConstants {
 
-	static final String CUCUMBER_FEATURES =  "src/test/resources/features/Main";
+	static final String CUCUMBER_FEATURES =  "src/test/resources/features";
 
     static final String CUCUMBER_FORMAT_TYPE =  "pretty";
     // com.xsoftqa.autotest.stepdefinitions
@@ -23,7 +23,7 @@ public class AutomatedTestConstants {
     static final String CUCUMBER_REPORT_PATH = "html:target/cucumber-report-html/";
     static final String CUCUMBER_OUTPUT_DIRECTORY = "target/cucumber-reports/";
     static final boolean CUCUMBER_MONACHROME =  true;
-    static final boolean CUCUMBER_DRY_RUN =  false;
+    static final boolean CUCUMBER_DRY_RUN =  true;
 
     //Used by the masterthough report
     static final String JSON_REPORT_FILE = CUCUMBER_OUTPUT_DIRECTORY + "Cucumber.json";

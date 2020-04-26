@@ -1,5 +1,5 @@
 #Author: abdul.tahir-akinyele@xsoftqa.com
-#Keywords Summary :
+#Keywords Summary 
 #Feature: List of scenarios.
 #Scenario: Business rule through list of steps with arguments.
 #Given: Some precondition step

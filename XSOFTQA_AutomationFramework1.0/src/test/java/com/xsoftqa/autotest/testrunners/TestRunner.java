@@ -25,7 +25,7 @@ import com.xsoftqa.autotest.stepdefinitions.AutomatedTest;
 
 					//tags = {"@common","@groups","@merge", "@merge-data-setup", "@regression", "~@manual", "@test-seq-1"}
 			
-					tags = {"@OpenEMR", "@test-seq-1"}
+					tags = {"@OpenEMR", "@end2end", "@test-seq-1"}
 		
 				  )
 public class TestRunner extends AutomatedTest {

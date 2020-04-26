@@ -246,7 +246,8 @@ public class StepDefinitionsBase {
     	//setup the chromedriver using WebDriverManager
         //WebDriverManager.chromedriver().proxy("http://10.173.10.100:8080").setup();
         WebDriverManager.chromedriver().setup();
-      
+
+        
 
     }
     
