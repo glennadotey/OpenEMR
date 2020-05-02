@@ -15,7 +15,7 @@ public class AutomatedTestConstants {
     // com.xsoftqa.autotest.stepdefinitions
     // XSOFTQA_AutomationFramework1.0/src/main/java/com/xsoftqa/autotest/stepdefinitions
     //static final String CUCUMBER_GLUE =  "com.xsoftqa.autotest.stepdefinitions";
-    static final String CUCUMBER_GLUE =  "/src/main/java/com/xsoftqa/autotest/stepdefinitions";  
+    static final String CUCUMBER_GLUE =  "src/main/java/com/xsoftqa/autotest/stepdefinitions";  
 
     static final String CUCUMBER_FORMAT_TEST_RESULTS_PATH =  "junit:target/cucumber-junit-report/test_results.xml";
     static final String CUCUMBER_JSON_PATH = "json:target/Cucumber.json";
