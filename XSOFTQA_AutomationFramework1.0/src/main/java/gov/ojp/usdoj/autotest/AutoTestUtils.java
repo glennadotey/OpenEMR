@@ -1,4 +1,4 @@
-package com.xsoftqa.autotest;
+package gov.ojp.usdoj.autotest;
 
 import java.util.concurrent.TimeUnit; 
 

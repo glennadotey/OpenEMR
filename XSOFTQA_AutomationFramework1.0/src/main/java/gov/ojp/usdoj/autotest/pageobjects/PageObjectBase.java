@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.xsoftqa.autotest.pageobjects;
+package gov.ojp.usdoj.autotest.pageobjects;
 
 import static org.junit.Assert.fail;
 import static org.junit.Assert.assertEquals;
@@ -45,8 +45,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.java.en.Then;
-import com.xsoftqa.autotest.AutoTestGlobals;
-import com.xsoftqa.autotest.stepdefinitions.AutomatedTestConstants;
+import gov.ojp.usdoj.autotest.AutoTestGlobals;
+import gov.ojp.usdoj.autotest.stepdefinitions.AutomatedTestConstants;
+
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 //import com.xsoftqa.autotest.webdrivers.WebDriverExt;

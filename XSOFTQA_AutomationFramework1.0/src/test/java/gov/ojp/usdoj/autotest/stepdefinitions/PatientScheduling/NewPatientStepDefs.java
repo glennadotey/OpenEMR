@@ -3,17 +3,11 @@
  *
  * 
  */
-package com.xsoftqa.autotest.stepdefinitions.PatientScheduling;
+package gov.ojp.usdoj.autotest.stepdefinitions.PatientScheduling;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-
-import com.xsoftqa.autotest.pageobjects.Main.MainDashboardPage;
-import com.xsoftqa.autotest.pageobjects.PatientScheduling.NewPatientPage;
-import com.xsoftqa.autotest.stepdefinitions.StepDefinitionsBase;
-import com.xsoftqa.autotest.stepdefinitions.TestScenarioSession;
-import com.xsoftqa.autotest.stepdefinitions.Main.MainDashboardStepDefs;
 
 import cucumber.api.DataTable;
 import cucumber.api.PendingException;
@@ -22,6 +16,11 @@ import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import gov.ojp.usdoj.autotest.pageobjects.Main.MainDashboardPage;
+import gov.ojp.usdoj.autotest.pageobjects.PatientScheduling.NewPatientPage;
+import gov.ojp.usdoj.autotest.stepdefinitions.StepDefinitionsBase;
+import gov.ojp.usdoj.autotest.stepdefinitions.TestScenarioSession;
+import gov.ojp.usdoj.autotest.stepdefinitions.Main.MainDashboardStepDefs;
 
 /**
  * @author Gadotey

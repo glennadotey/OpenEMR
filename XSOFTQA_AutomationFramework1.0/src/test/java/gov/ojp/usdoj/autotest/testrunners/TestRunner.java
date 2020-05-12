@@ -1,4 +1,4 @@
-package com.xsoftqa.autotest.testrunners;
+package gov.ojp.usdoj.autotest.testrunners;
 
 /**
  * @author Gadotey
@@ -8,7 +8,7 @@ package com.xsoftqa.autotest.testrunners;
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-import com.xsoftqa.autotest.stepdefinitions.AutomatedTest;
+import gov.ojp.usdoj.autotest.stepdefinitions.AutomatedTest;
 
 /*
  *  This class is manual testing and what gets Cucumber running. The class itself is intentionally empty and does nothing,

@@ -1,4 +1,4 @@
-package com.xsoftqa.autotest.dataGenerator;
+package gov.ojp.usdoj.autotest.dataGenerator;
 
 /**
  * Profile Bean

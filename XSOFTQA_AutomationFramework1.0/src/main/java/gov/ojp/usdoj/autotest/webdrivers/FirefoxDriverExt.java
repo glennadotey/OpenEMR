@@ -1,4 +1,4 @@
-package com.xsoftqa.autotest.webdrivers;
+package gov.ojp.usdoj.autotest.webdrivers;
 
 /**
  * @author tahiraka
@@ -6,8 +6,9 @@ package com.xsoftqa.autotest.webdrivers;
  */
 
 import static org.junit.Assert.fail;
-import com.xsoftqa.autotest.AutoTestGlobals;
-import com.xsoftqa.autotest.stepdefinitions.StepDefinitionsBase;
+
+import gov.ojp.usdoj.autotest.AutoTestGlobals;
+import gov.ojp.usdoj.autotest.stepdefinitions.StepDefinitionsBase;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,6 +1,8 @@
 
-package com.xsoftqa.autotest.stepdefinitions;
+package gov.ojp.usdoj.autotest.stepdefinitions;
 
+
+import static gov.ojp.usdoj.autotest.stepdefinitions.AutomatedTestConstants.*;
 
 /*
 import net.masterthought.cucumber.Configuration;
@@ -10,7 +12,6 @@ import org.apache.commons.io.FileUtils;
 */
 import java.io.*;
 import java.util.*;
-import static com.xsoftqa.autotest.stepdefinitions.AutomatedTestConstants.*;
 
 /**
  * This class generates nice cucumber reports useful for the developers to

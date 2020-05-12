@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.xsoftqa.autotest.stepdefinitions;
+package gov.ojp.usdoj.autotest.stepdefinitions;
 
 import java.io.File;
 import java.util.TimerTask;

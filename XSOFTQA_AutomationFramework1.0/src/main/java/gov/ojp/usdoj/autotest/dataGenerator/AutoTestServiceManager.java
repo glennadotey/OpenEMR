@@ -1,6 +1,4 @@
-package com.xsoftqa.autotest.dataGenerator;
-
-import com.xsoftqa.autotest.dataGenerator.ProfileManager.TestProfile;
+package gov.ojp.usdoj.autotest.dataGenerator;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -31,6 +29,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.openqa.selenium.remote.http.HttpMethod;
+
+import gov.ojp.usdoj.autotest.dataGenerator.ProfileManager.TestProfile;
 
 //import com.gargoylesoftware.htmlunit.HttpMethod;
 

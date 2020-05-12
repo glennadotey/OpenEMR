@@ -1,6 +1,6 @@
-package com.xsoftqa.autotest.stepdefinitions;
+package gov.ojp.usdoj.autotest.stepdefinitions;
 
-import com.xsoftqa.autotest.dataGenerator.AutoTestServiceManager;
+import gov.ojp.usdoj.autotest.dataGenerator.AutoTestServiceManager;
 
 /**
  * @author tahiraka

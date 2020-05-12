@@ -1,6 +1,4 @@
-package com.xsoftqa.autotest.dataGenerator;
-
-import com.xsoftqa.autotest.dataGenerator.ProfileBean;
+package gov.ojp.usdoj.autotest.dataGenerator;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,6 +7,8 @@ import java.util.HashMap;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 //import org.springframework.test.context.ContextConfiguration;
+
+import gov.ojp.usdoj.autotest.dataGenerator.ProfileBean;
 
 
 

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.xsoftqa.autotest.dataobjects;
+package gov.ojp.usdoj.autotest.dataobjects;
 
 /**
  * @author tahiraka

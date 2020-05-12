@@ -3,12 +3,12 @@
  *
  */
 
-package com.xsoftqa.autotest.pageobjects.search;
+package gov.ojp.usdoj.autotest.pageobjects.search;
 
 import java.util.concurrent.TimeUnit;
 
-import com.xsoftqa.autotest.AutoTestGlobals;
-import com.xsoftqa.autotest.pageobjects.PageObjectBase;
+import gov.ojp.usdoj.autotest.AutoTestGlobals;
+import gov.ojp.usdoj.autotest.pageobjects.PageObjectBase;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;

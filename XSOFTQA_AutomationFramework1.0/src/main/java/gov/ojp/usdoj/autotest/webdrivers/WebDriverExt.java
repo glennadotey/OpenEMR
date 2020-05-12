@@ -1,4 +1,4 @@
-package com.xsoftqa.autotest.webdrivers;
+package gov.ojp.usdoj.autotest.webdrivers;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

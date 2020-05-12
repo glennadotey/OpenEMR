@@ -1,11 +1,4 @@
-package com.xsoftqa.autotest.webdrivers;
-
-/**
- * @author tahiraka
- *
- */
-
-import com.xsoftqa.autotest.AutoTestGlobals;
+package gov.ojp.usdoj.autotest.webdrivers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +18,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import gov.ojp.usdoj.autotest.AutoTestGlobals;
 
 public class SafeWebElement extends RemoteWebElement {
 private static final Logger log = LogManager.getLogger(SafeWebElement.class);

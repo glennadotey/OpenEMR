@@ -1,4 +1,4 @@
-package com.xsoftqa.autotest.stepdefinitions.Main;
+package gov.ojp.usdoj.autotest.stepdefinitions.Main;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -19,9 +19,9 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import com.xsoftqa.autotest.pageobjects.Main.MainDashboardPage;
-import com.xsoftqa.autotest.stepdefinitions.StepDefinitionsBase;
-import com.xsoftqa.autotest.stepdefinitions.TestScenarioSession;
+import gov.ojp.usdoj.autotest.pageobjects.Main.MainDashboardPage;
+import gov.ojp.usdoj.autotest.stepdefinitions.StepDefinitionsBase;
+import gov.ojp.usdoj.autotest.stepdefinitions.TestScenarioSession;
 
 public class MainDashboardStepDefs extends StepDefinitionsBase{
 	

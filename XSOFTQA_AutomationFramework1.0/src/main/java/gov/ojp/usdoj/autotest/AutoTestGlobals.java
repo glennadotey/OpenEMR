@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.xsoftqa.autotest;
+package gov.ojp.usdoj.autotest;
 
 /**
  * 

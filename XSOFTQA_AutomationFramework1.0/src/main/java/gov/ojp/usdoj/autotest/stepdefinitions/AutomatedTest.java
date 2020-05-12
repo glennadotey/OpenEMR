@@ -1,4 +1,4 @@
-package com.xsoftqa.autotest.stepdefinitions;
+package gov.ojp.usdoj.autotest.stepdefinitions;
 
 /**
  * @author tahiraka
@@ -7,12 +7,10 @@ package com.xsoftqa.autotest.stepdefinitions;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+
+import static gov.ojp.usdoj.autotest.stepdefinitions.AutomatedTestConstants.*;
+
 import org.junit.runner.RunWith;
-
-
-import static com.xsoftqa.autotest.stepdefinitions.AutomatedTestConstants.*;
-import static com.xsoftqa.autotest.stepdefinitions.AutomatedTestConstants.CUCUMBER_DRY_RUN;
-import static com.xsoftqa.autotest.stepdefinitions.AutomatedTestConstants.CUCUMBER_MONACHROME;
 
 
 /**

@@ -1,10 +1,10 @@
-package com.xsoftqa.autotest.stepdefinitions;
+package gov.ojp.usdoj.autotest.stepdefinitions;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import com.xsoftqa.autotest.dataobjects.QuestionObject;
+import gov.ojp.usdoj.autotest.dataobjects.QuestionObject;
 
 
 /**
