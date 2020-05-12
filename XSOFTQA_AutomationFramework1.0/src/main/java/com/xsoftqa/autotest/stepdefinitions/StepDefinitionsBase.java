@@ -32,6 +32,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.aspectj.lang.annotation.After;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.junit.Before;
@@ -47,7 +48,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.HasInputDevices;
 import org.openqa.selenium.interactions.Mouse;
@@ -59,17 +59,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.deque.axe.AXE;
 
+import ch.qos.logback.core.joran.action.Action;
 import cucumber.api.Scenario;
-import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import com.xsoftqa.autotest.AutoTestGlobals;
 import com.xsoftqa.autotest.dataGenerator.AutoTestServiceManager;
 import com.xsoftqa.autotest.dataGenerator.ProfileManager.TestProfile;
 import com.xsoftqa.autotest.pageobjects.PageObjectBase;
-//import gov.ojp.usdoj.autotest.pageobjects.CaseWorker.CaseWorkerPage;
-//import gov.ojp.usdoj.autotest.pageobjects.Common.LoginPage;
-//import gov.ojp.usdoj.autotest.pageobjects.Questions.CreateWebBaseBudgetDetailsPage;
-//import gov.ojp.usdoj.autotest.pageobjects.Questions.ManageSpecificQuestionsPage;
+//import com.xsoftqa.autotest.pageobjects.CaseWorker.CaseWorkerPage;
+//import com.xsoftqa.autotest.pageobjects.Common.LoginPage;
+//import com.xsoftqa.autotest.pageobjects.Questions.CreateWebBaseBudgetDetailsPage;
+//import com.xsoftqa.autotest.pageobjects.Questions.ManageSpecificQuestionsPage;
 import com.xsoftqa.autotest.webdrivers.FirefoxDriverExt;
 import com.xsoftqa.autotest.webdrivers.ChromeDriverExt;
 import com.xsoftqa.autotest.webdrivers.InternetExplorerDriverExt;
@@ -109,34 +109,34 @@ public class StepDefinitionsBase {
     private final String screenShotPath;
     private final String nodeNamesFile; 
     
-    // This will hold the PEGA DCM URL
-    private static String contextRoot;
-    
-  //This will hold the username
-  	protected static String contextAdminUser;
-  	protected static String contextPhysicianUser;
-  	protected static String contextClinicianUser;
-  	protected static String contextAccountantUser;
-  	protected static String contextReceptionistUser;
+	// This will hold the PEGA DCM URL
+	private static String contextRoot;
 
-  	private static String contextAdminUserPassword;
-  	private static String contextPhysicianUserPassword;
-  	private static String contextClinicianUserPassword;
-  	private static String contextAccountantUserPassword;
-  	private static String contextReceptionistUserPassword;
-    
+	// This will hold the username
+	protected static String contextAdminUser;
+	protected static String contextPhysicianUser;
+	protected static String contextClinicianUser;
+	protected static String contextAccountantUser;
+	protected static String contextReceptionistUser;
+
+	private static String contextAdminUserPassword;
+	private static String contextPhysicianUserPassword;
+	private static String contextClinicianUserPassword;
+	private static String contextAccountantUserPassword;
+	private static String contextReceptionistUserPassword;
+
 	/**
-	 * Get the context Root PEGA URL from the global settings properties file
-	 * and return it to the caller method
-	 * @param N/A
-	 * @return contextRoot
-	 * Usage: webDriver.get(super.getContextRoot());
+	 * Get the context Root PEGA URL from the global settings properties file and
+	 * return it to the caller method
 	 * 
+	 * @param N/A
+	 * @return contextRoot Usage: webDriver.get(super.getContextRoot());
+	 *
 	 */
 	public static String getContextRoot() {
 		return contextRoot;
 	}
-	
+
 	/**
 	 * @author Abdul
 	 * @category This method returns the Admin Password
@@ -144,9 +144,9 @@ public class StepDefinitionsBase {
 	 * @return contextAdminUserPassword
 	 */
 	public static String getContextAdminUserPassword() {
-		return contextAdminUserPassword;		
+		return contextAdminUserPassword;
 	}
-	
+
 	/**
 	 * @author Abdul
 	 * @category This method returns the Physician Password
@@ -154,10 +154,10 @@ public class StepDefinitionsBase {
 	 * @return contextAdminUserPassword
 	 */
 	public static String getContextPhysicianUserPassword() {
-		return contextPhysicianUserPassword;		
+		return contextPhysicianUserPassword;
 	}
 
-	// / CucumberJUnitJAVAFramework/XSOFTQA_Automation/data
+	
 	private final static String propertyFilePath= "data/global-settings.properties";
     
     public  final URL scriptUrl = StepDefinitionsBase.class.getResource("/axe.min.js");
@@ -184,21 +184,21 @@ public class StepDefinitionsBase {
             // load a properties file
             prop.load(input);
 
-            // get the property value and print it out
-            contextRoot = (prop.getProperty("context.root") != null) ? prop.getProperty("context.root") : "null"; 
+         // get the property value and print it out
+            contextRoot = (prop.getProperty("context.root") != null) ? prop.getProperty("context.root") : "null";
    
             // OpenEMR
             // This will get the property value for the Admin and print it out
-            contextAdminUser =  (prop.getProperty("context.admin") != null) ? prop.getProperty("context.admin") : "null";                   
-            contextPhysicianUser = (prop.getProperty("context.physician") != null) ? prop.getProperty("context.physician") : "null"; 
+            contextAdminUser =  (prop.getProperty("context.admin") != null) ? prop.getProperty("context.admin") : "null";                  
+            contextPhysicianUser = (prop.getProperty("context.physician") != null) ? prop.getProperty("context.physician") : "null";
             contextReceptionistUser = (prop.getProperty("context.receptionist") != null) ? prop.getProperty("context.receptionist") : "null";
-            contextClinicianUser = (prop.getProperty("context.clinician") != null) ? prop.getProperty("context.clinician") : "null"; 
-            contextAccountantUser = (prop.getProperty("context.accountant") != null) ? prop.getProperty("context.accountant") : "null";   
-            
+            contextClinicianUser = (prop.getProperty("context.clinician") != null) ? prop.getProperty("context.clinician") : "null";
+            contextAccountantUser = (prop.getProperty("context.accountant") != null) ? prop.getProperty("context.accountant") : "null";  
+           
             // ********************* SECTION BELOW IS FOR ALL PASSWORDS USED BY EACH TEAM *********************
-            
+           
             // get the property value for the COMMON user password used across teams
-            contextAdminUserPassword = (prop.getProperty("context.admin-password") != null) ? prop.getProperty("context.admin-password") : "null"; 
+            contextAdminUserPassword = (prop.getProperty("context.admin-password") != null) ? prop.getProperty("context.admin-password") : "null";
             contextPhysicianUserPassword = (prop.getProperty("context.physician-password") != null) ? prop.getProperty("context.physician-password") : "null";
             contextClinicianUserPassword = (prop.getProperty("context.clinician-password") != null) ? prop.getProperty("context.clinician-password") : "null";
             contextAccountantUserPassword = (prop.getProperty("context.accountant-password") != null) ? prop.getProperty("context.accountant-password") : "null";
@@ -208,16 +208,17 @@ public class StepDefinitionsBase {
             ex.printStackTrace();
         	}
 								        
-	        log.info("Context Root property from global-settings.properties file: " + contextRoot);		
+	        //log.info("Context Root property from global-settings.properties file: " + contextRoot);		
 			
-	        //log.info("Context Draft User property from global-settings.properties file: " + contextAdminUser);
+	        //log.info("Context Draft User property from global-settings.properties file: " + contextDraftUser);
 	        
 	}
 	
 	
+	
     public StepDefinitionsBase()  {
     	    	
-    	setupChrome();
+    	//setupChrome();
         initWebDriverMap();
         //WebDriverManager.chromedriver().config().setProperties("/JGII_Automation/src/main/java/gov/ojp/usdoj/autotest/configuration/my-wdm.properties");
         defaultProfileName = (WebDriverManager.chromedriver().config().getProperties() != null) ? WebDriverManager.chromedriver().config().getProperties() : TestProfile.AUTOTEST_OJP_DCM_ADMIN.name().toLowerCase();
@@ -244,7 +245,6 @@ public class StepDefinitionsBase {
     protected void setupChrome() {
     	
     	//setup the chromedriver using WebDriverManager
-        //WebDriverManager.chromedriver().proxy("http://10.173.10.100:8080").setup();
         WebDriverManager.chromedriver().setup();
       
 
@@ -270,8 +270,8 @@ public class StepDefinitionsBase {
 	 * //WebDriverManager.chromedriver().config().getProperties(); webDriver = new
 	 * ChromeDriver(); }
 	 */
-    //(value = "")
-    @After
+    
+    @After(value = "")
     public void teardown() {
         if (webDriver != null) {
         	 log.info("Closing Webdriver....");
@@ -442,9 +442,9 @@ public class StepDefinitionsBase {
             
             webDriver = new FirefoxDriverExt(profile);
             
-        }
-        else if (browser.equals("ie")) {
-        	webDriver = new InternetExplorerDriver();
+//        }
+//        else if (browser.equals("ie")) {
+//        	webDriver = new InternetExplorerDriverExt();
         }
         else if (browser.equals("chrome")) {
         	// Set Chrome Home
@@ -535,7 +535,7 @@ public class StepDefinitionsBase {
         }        
     }*/
     
-    protected void logOut(WebDriver driver) throws IOException {
+    protected void logOut(WebDriverExt driver) throws IOException {
         // go to the home page
         openOJPDCMHome(driver);
         
@@ -543,7 +543,7 @@ public class StepDefinitionsBase {
         if (verifyElementExists(driver, By.xpath("//i[@data-test-id='px-opr-image-ctrl']"))) {
             new PageObjectBase(driver).clickElement( By.xpath("//i[@data-test-id='px-opr-image-ctrl']"), By.xpath("//li[@data-test-id='201711011301500120490']//a[@class='menu-item-anchor ']//*[@class='menu-item-title']"));
 
-            driver.findElement(By.xpath("//li[@data-test-id='201711011301500120490']//a[@class='menu-item-anchor ']//*[@class='menu-item-title']")).click();
+            driver.findClickableElement(By.xpath("//li[@data-test-id='201711011301500120490']//a[@class='menu-item-anchor ']//*[@class='menu-item-title']")).click();
             
             WebDriverWait wait = new WebDriverWait(driver, AutoTestGlobals.WAIT_TIME_NORMAL);                
             wait.until(ExpectedConditions.presenceOfElementLocated(By.className("securitywidgeterror"))); 
@@ -582,7 +582,7 @@ public class StepDefinitionsBase {
     
     //Change WebDriverExt to WebDriver
     public WebDriver getWebDriver(TestProfile testProfile) throws Throwable {
-        WebDriver webDriver = null;
+        //WebDriver webDriver = null;
         webDriver = getWebDriver(testProfile.name().toLowerCase());
         if (webDriver == null) {
             throw new Exception ("Unknown profile type!");

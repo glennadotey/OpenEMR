@@ -24,7 +24,7 @@ Feature: Main Dashboard feature
   Scenario: System Admin dashboard
     Given I am logged in as an Adminstrator
     When I logged in successfully as an Admin
-    Then I can see my full name on the top right corner of the page
+    Then I can see my full name "Billy" "Smith" on the top right corner of the page
     And I can see the actions i can performed as follows as an Admin:
       | Calendar       |
       | Flow Board     |

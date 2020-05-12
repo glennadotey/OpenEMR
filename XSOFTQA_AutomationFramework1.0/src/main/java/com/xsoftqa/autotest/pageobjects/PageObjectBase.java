@@ -11,7 +11,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * @author tahiraka
+ * @author Gadotey
  *
  */
 
@@ -49,7 +49,7 @@ import com.xsoftqa.autotest.AutoTestGlobals;
 import com.xsoftqa.autotest.stepdefinitions.AutomatedTestConstants;
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
-//import gov.ojp.usdoj.autotest.webdrivers.WebDriverExt;
+//import com.xsoftqa.autotest.webdrivers.WebDriverExt;
 
 public class PageObjectBase {
 
@@ -71,13 +71,14 @@ public class PageObjectBase {
 
 	private By usernameFieldBy = By.id("txtUserID");
 	private By passwordFieldBy = By.id("txtPassword");
-	private By loginButtonBy = By.xpath("//button[@id='sub']");
+	private By loginButtonBy = By.xpath("//button[@class='btn btn-default btn-lg']");
 	private By homePageBy = By.xpath("//a[contains(text(),'JGITS')]");
 	private By userIconBy = By.cssSelector("[data-test-id=px-opr-image-ctrl]");
-	private By userProfileDialogWindow = By.xpath(
-			"//span[contains(text(),'User Profile')][@id='modaldialog_hd_title']//ancestor::div[@role='dialog']");
+	private By openEMRLogo = By.id("oemr_logo");
+	private By openEMRTitle = By.xpath("//div[@class='title']");
+		
 
-	private By closeBtn = By.xpath("//button[@class='container-close']");
+	private By anySearchBoxBy = By.xpath("//input[@id='anySearchBox']");
 
 	public String actualText;
 
@@ -121,23 +122,39 @@ public class PageObjectBase {
 
 	public void verifySuccessfulLogin() throws Exception {
 		// Use this method from the PageObjectBase class to verify the element
-		if (verifyElementDisplayed(userProfileDialogWindow)) {
-			WebElement userProfileDialogWindowObj = webDriver.findElement(userProfileDialogWindow);
-			if (verifyElementDisplayed(closeBtn)) {
-				WebElement closeBtnObj = userProfileDialogWindowObj.findElement(closeBtn);
-				closeBtnObj.click();
-				log.debug("Closing User Profile Dialog Window");
+		if (verifyElementDisplayed(openEMRLogo)) {
+			WebElement openEMRWindowObj = webDriver.findElement(openEMRLogo);
+			if (verifyElementDisplayed(anySearchBoxBy)) {
+				WebElement anySearchBoxObj = openEMRWindowObj.findElement(anySearchBoxBy);
+				anySearchBoxObj.click();
+				log.debug("Verifying login is successful");
 			}
 		} else {
 			throw new LoginException();
 		}
-		// log.debug("Currently logged in..... ");
+		log.debug("Currently logged in..... ");
 	}
+	
+	public void verifyPageTitle() throws Exception {
+		// Use this method from the PageObjectBase class to verify the element
+		if (verifyElementDisplayed(openEMRTitle)) {
+			WebElement openEMRWindowObj = webDriver.findElement(openEMRTitle);
+			if (verifyElementDisplayed(anySearchBoxBy)) {
+				WebElement anySearchBoxObj = openEMRWindowObj.findElement(anySearchBoxBy);
+				anySearchBoxObj.click();
+				log.debug("Verifying login is successful");
+			}
+		} else {
+			throw new LoginException();
+		}
+		log.debug("Currently logged in..... ");
+	}
+	
 
 	public void login(String username, String password) throws Exception {
 		try {
-			setTextField(By.id("txtUserID"), username);
-			setTextField(By.id("txtPassword"), password);
+			setTextField(By.id("authUser"), username);
+			setTextField(By.id("clearPass"), password);
 			clickLogInButton();
 			verifySuccessfulLogin();
 		} catch (Exception e) {
@@ -148,7 +165,7 @@ public class PageObjectBase {
 	// ------------------------- LOGIN END HERE ------------------------------
 
 	/**
-	 * @author tahiraka This method below is called to force Manually tested stories
+	 * @author Gadotey This method below is called to force Manually tested stories
 	 *         to show pass in the report to use this strategy you will have to put
 	 *         "Pass" into your feature file scenario step if the manual test failed
 	 *         then you just have to changed the "Pass" in the feature file to
@@ -226,7 +243,7 @@ public class PageObjectBase {
 	}
 
 	/**
-	 * @author tahiraka
+	 * @author Gadotey
 	 * @param element
 	 * 
 	 */
@@ -240,7 +257,7 @@ public class PageObjectBase {
 			builder.moveToElement(webElement).build().perform();
 
 			// Wait until the hover appears
-			//waitShort.until(ExpectedConditions.visibilityOfElementLocated(element));
+			waitShort.until(ExpectedConditions.visibilityOfElementLocated(element));
 			// waitShort.until(ExpectedConditions.visibilityOfElementLocated(By.className("figcaption")));
 
 			// Assert that the hover displayed
@@ -257,7 +274,7 @@ public class PageObjectBase {
 	}
 
 	/**
-	 * @author tahiraka
+	 * @author Gadotey
 	 * @param null
 	 * @Usage: return mouseHover(element);
 	 * 
@@ -269,7 +286,7 @@ public class PageObjectBase {
 	}
 
 	/**
-	 * @author tahiraka
+	 * @author Gadotey
 	 * @param elementBy
 	 */
 	public void JavaScriptAlert(By elementBy) {
@@ -290,7 +307,7 @@ public class PageObjectBase {
 	}
 
 	/**
-	 * @author tahiraka
+	 * @author Gadotey
 	 */
 	public void selectCheckbox() {
 		try {
@@ -351,7 +368,7 @@ public class PageObjectBase {
 		try {
 			WebElement elementToHighlight = webDriver.findElement(elementToClick);
 			waitForPageToBeReady();
-			//waitUntil.until(ExpectedConditions.elementToBeClickable(elementToClick));
+			waitUntil.until(ExpectedConditions.elementToBeClickable(elementToClick));
 			// Highlight the element
 			highLightElement(elementToHighlight);
 			webDriver.findElement(elementToClick).click();
@@ -711,7 +728,7 @@ public class PageObjectBase {
 	}
 
 	/**
-	 * Add by: tahiraka By using the the following method, you can try clicking on
+	 * Add by: Gadotey By using the the following method, you can try clicking on
 	 * an element. If exception is thrown then catch the exception and try to click
 	 * again until the element is present:
 	 * 
@@ -748,7 +765,7 @@ public class PageObjectBase {
 	}
 
 	/**
-	 * @author tahiraka This method verifies to see if the text box is read-only and
+	 * @author Gadotey This method verifies to see if the text box is read-only and
 	 *         not editable Usage: boolean readOnly = isreadOnly("PUT THE WEBELEMENT
 	 *         HERE"); Assert.assertTrue(readOnly, "The text box is Editable")
 	 * @param element
@@ -764,7 +781,7 @@ public class PageObjectBase {
 	}
 
 	/**
-	 * @author tahiraka This method verifies to see if the text box is enabled and
+	 * @author Gadotey This method verifies to see if the text box is enabled and
 	 *         editable, put the Usage code in your Step Definition file Usage:
 	 *         boolean editable = isEditable("PUT THE WEBELEMENT HERE");
 	 *         Assert.assertFalse(editable, "The text box is not Editable")
@@ -812,7 +829,7 @@ public class PageObjectBase {
 	}
 
 	/**
-	 * @author tahiraka This method reads value from an element Usage: String
+	 * @author Gadotey This method reads value from an element Usage: String
 	 *         valueFromElement = readValueFromElement(WebElement);
 	 *         Assert.assertFalse(editable, "The text box is not Editable")
 	 * @param element
@@ -971,12 +988,12 @@ public class PageObjectBase {
 			List<WebElement> tableColumns = (tableObj.findElement(By.xpath("//tr[@class='cellCont']")))
 					.findElements(By.tagName("th"));
 			for (int i = 0; i < tableColumns.toArray().length; i++) {
-				WebElement obj = (WebElement) tableObj.findElements(By.xpath("//div[@class='cellIn ']")).get(i);
-				String columnCellValue = obj.getAttribute("innerText");
+				WebElement obj = (WebElement) tableColumns.get(i);
+				String columnCellValue = obj.getText();
 				Boolean result = Pattern.compile(Pattern.quote(columnCellValue), Pattern.CASE_INSENSITIVE)
 						.matcher(columnNameValue).find();
 				if (result) {
-					columnIndex = i + 1;
+					columnIndex = i + 2;
 					break;
 				}
 			}
@@ -1005,8 +1022,8 @@ public class PageObjectBase {
 			List<WebElement> tableRows = tableObj
 					.findElements(By.xpath("//td[contains(@data-ui-meta,\"pyCells(" + (columnIndexValue) + ")\")]"));
 			for (int i = 0; i < tableRows.toArray().length; i++) {
-				WebElement obj = tableObj.findElement(By.xpath("//span[contains(text(),'" + rowNameValue + "')]"));
-				String rowCellValue = obj.getAttribute("innerText");
+				WebElement obj = tableRows.get(i);
+				String rowCellValue = obj.getText();
 				Boolean result = Pattern.compile(Pattern.quote(rowCellValue), Pattern.CASE_INSENSITIVE)
 						.matcher(rowNameValue).find();
 				if (result) {
@@ -1036,24 +1053,15 @@ public class PageObjectBase {
 				.findElements(By.tagName("th"));
 		for (int i = 0; i < tableColumns.toArray().length; i++) {
 			WebElement obj = (WebElement) tableObj.findElements(By.xpath("//div[@class='cellIn ']")).get(i);
-			String columnCellValue = obj.getAttribute("innerText");
+			String columnCellValue = obj.getText();
 			Boolean result = Pattern.compile(Pattern.quote(columnCellValue), Pattern.CASE_INSENSITIVE)
 					.matcher(columnNameValue).find();
 			if (result) {
-				// obj.findElement(By.id("id=pui_filter")).click();
-				// obj.findElement(By.cssSelector("[aria-label=Click to filter]")).click();
 				obj.findElements(By.xpath("//a[@class='filter highlight-ele']")).get(i - 3).click();
-				// WebElement filterWindow = (WebElement)
-				// webDriver.findElements(By.cssSelector("HIDE541CD7001425DE69F6D74920028CA4E"));
 				String checkboxId = obj.findElement(By.xpath("//label[contains(text(),'" + filterValue + "')]"))
 						.getAttribute("for");
-				// obj.findElement(By.id(checkboxId)).click();
 				obj.findElement(By.xpath("//input[@id='" + checkboxId + "']")).click();
-				// obj.findElement( By.xpath(".//input[following-sibling::label[contains(.,'" +
-				// filterValue + "')]]") ).click();
-
 				obj.findElement(By.xpath("//button[contains(text(),'Apply')]")).click();
-				// webDriver.findElement(By.cssSelector("[onclick='pega.u.d.getPopOver(0).close('OK');']")).click();
 				break;
 			}
 		}
@@ -1094,8 +1102,8 @@ public class PageObjectBase {
 	 * @param int    columnIndex
 	 * @returns cellObj
 	 */
-	public Object getCellObj(String xPathExpression, int rowIndex, int columnIndex) throws Exception {
-		Object cellObj = null;
+	public WebElement getCellObj(String xPathExpression, int rowIndex, int columnIndex) throws Exception {
+		WebElement cellObj = null;
 		try {
 			WebElement tableObj = (WebElement) getTable(xPathExpression);
 			cellObj = tableObj.findElement(By.xpath("//tr[" + rowIndex + "]//td[" + columnIndex + "]"));
@@ -1118,7 +1126,7 @@ public class PageObjectBase {
 			String iframeTitle = null;
 			
 			if (frameTitle != null) {
-
+				webDriver.switchTo().defaultContent();
 				List<WebElement> iframeArr = webDriver
 						.findElements(By.xpath("//iframe[contains(@title,'" + frameTitle + "')]"));
 				Collections.reverse(iframeArr);
@@ -1126,8 +1134,8 @@ public class PageObjectBase {
 					WebElement iframeObj = iframeArr.get(i);
 					if (iframeObj.isDisplayed()) {
 						iframeObj = iframeArr.get(i);
-						iframeTitle = iframeObj.getAttribute(frameTitle);
-						System.out.println(iframeTitle);
+						iframeTitle = iframeObj.getAttribute("title");
+						System.out.println("iframe: " +iframeTitle);
 						if (iframeObj.getAttribute("title").contains(frameTitle)) {
 							WebDriverWait wait = new WebDriverWait(webDriver, 60);
 							wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iframeObj));

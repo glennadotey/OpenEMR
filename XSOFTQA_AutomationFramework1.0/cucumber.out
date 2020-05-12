@@ -1,0 +1,28 @@
+2020-05-12 13:27:11 DEBUG PageObjectBase:509 - Sending text: admin
+2020-05-12 13:27:12 DEBUG PageObjectBase:509 - Sending text: pass
+2020-05-12 13:27:17 DEBUG PageObjectBase:130 - Verifying login is successful
+2020-05-12 13:27:17 DEBUG PageObjectBase:135 - Currently logged in..... 
+2020-05-12 13:27:18 DEBUG PageObjectBase:130 - Verifying login is successful
+2020-05-12 13:27:18 DEBUG PageObjectBase:135 - Currently logged in..... 
+2020-05-12 13:27:18 INFO  StepDefinitionsBase:286 - ------------TearDown Beginning-----------------------------------
+2020-05-12 13:27:18 INFO  StepDefinitionsBase:287 - CHROME VERSION : 
+2020-05-12 13:27:18 INFO  StepDefinitionsBase:288 - -----------------------------------------------
+2020-05-12 13:27:18 ERROR StepDefinitionsBase:293 - TEST FAILED
+2020-05-12 13:27:18 ERROR StepDefinitionsBase:317 - -----------------------------------------------
+2020-05-12 13:27:18 ERROR StepDefinitionsBase:318 - PAGE INFORMATION IS FOR  CDwindow-93C531D11A446DF50E90A0D01EED4C37
+2020-05-12 13:27:18 ERROR StepDefinitionsBase:319 - PAGE IS ON OpenEMR
+2020-05-12 13:27:18 ERROR StepDefinitionsBase:320 - PAGE URL http://demo.openemr.io/a/openemr/interface/main/tabs/main.php?token_main=pvFsdd7EsZNlcAh5GlRw4YVuDpZuXvkLV3p0iTgg
+2020-05-12 13:27:48 ERROR StepDefinitionsBase:329 - TOTAL Validation ERRORS : 0
+2020-05-12 13:27:48 ERROR StepDefinitionsBase:331 - -----------------------------------------------
+2020-05-12 13:27:48 DEBUG StepDefinitionsBase:818 - Writing node names to file /tmp/ojp-dcm-node-names.txt: []
+2020-05-12 13:27:49 INFO  StepDefinitionsBase:286 - ------------TearDown Beginning-----------------------------------
+2020-05-12 13:27:49 INFO  StepDefinitionsBase:287 - CHROME VERSION : 
+2020-05-12 13:27:49 INFO  StepDefinitionsBase:288 - -----------------------------------------------
+2020-05-12 13:27:49 ERROR StepDefinitionsBase:293 - TEST FAILED
+2020-05-12 13:27:49 ERROR StepDefinitionsBase:317 - -----------------------------------------------
+2020-05-12 13:27:49 ERROR StepDefinitionsBase:318 - PAGE INFORMATION IS FOR  CDwindow-B2F9CE772FB64EBE28C84DF02E0E5A6D
+2020-05-12 13:27:49 ERROR StepDefinitionsBase:319 - PAGE IS ON 
+2020-05-12 13:27:49 ERROR StepDefinitionsBase:320 - PAGE URL data:,
+2020-05-12 13:28:19 ERROR StepDefinitionsBase:329 - TOTAL Validation ERRORS : 0
+2020-05-12 13:28:19 ERROR StepDefinitionsBase:331 - -----------------------------------------------
+2020-05-12 13:28:19 DEBUG StepDefinitionsBase:818 - Writing node names to file /tmp/ojp-dcm-node-names.txt: []
