@@ -1,18 +1,18 @@
-2020-05-13 15:33:58 DEBUG PageObjectBase:510 - Sending text: admin
-2020-05-13 15:33:59 DEBUG PageObjectBase:510 - Sending text: pass
-2020-05-13 15:34:04 DEBUG PageObjectBase:131 - Verifying login is successful
-2020-05-13 15:34:04 DEBUG PageObjectBase:136 - Currently logged in..... 
-2020-05-13 15:34:05 DEBUG PageObjectBase:131 - Verifying login is successful
-2020-05-13 15:34:05 DEBUG PageObjectBase:136 - Currently logged in..... 
-2020-05-13 15:34:05 INFO  StepDefinitionsBase:281 - ------------TearDown Beginning-----------------------------------
-2020-05-13 15:34:05 INFO  StepDefinitionsBase:282 - CHROME VERSION : 
-2020-05-13 15:34:05 INFO  StepDefinitionsBase:283 - -----------------------------------------------
-2020-05-13 15:34:05 DEBUG StepDefinitionsBase:813 - Writing node names to file /tmp/ojp-dcm-node-names.txt: []
-2020-05-13 15:34:05 INFO  StepDefinitionsBase:281 - ------------TearDown Beginning-----------------------------------
-2020-05-13 15:34:05 INFO  StepDefinitionsBase:282 - CHROME VERSION : 
-2020-05-13 15:34:05 INFO  StepDefinitionsBase:283 - -----------------------------------------------
-2020-05-13 15:34:05 DEBUG StepDefinitionsBase:813 - Writing node names to file /tmp/ojp-dcm-node-names.txt: []
-2020-05-13 15:34:05 INFO  StepDefinitionsBase:281 - ------------TearDown Beginning-----------------------------------
-2020-05-13 15:34:05 INFO  StepDefinitionsBase:282 - CHROME VERSION : 
-2020-05-13 15:34:05 INFO  StepDefinitionsBase:283 - -----------------------------------------------
-2020-05-13 15:34:05 DEBUG StepDefinitionsBase:813 - Writing node names to file /tmp/ojp-dcm-node-names.txt: []
+2020-05-13 17:09:32 DEBUG PageObjectBase:510 - Sending text: admin
+2020-05-13 17:09:33 DEBUG PageObjectBase:510 - Sending text: pass
+2020-05-13 17:09:38 DEBUG PageObjectBase:131 - Verifying login is successful
+2020-05-13 17:09:38 DEBUG PageObjectBase:136 - Currently logged in..... 
+2020-05-13 17:09:38 DEBUG PageObjectBase:131 - Verifying login is successful
+2020-05-13 17:09:38 DEBUG PageObjectBase:136 - Currently logged in..... 
+2020-05-13 17:09:38 INFO  StepDefinitionsBase:281 - ------------TearDown Beginning-----------------------------------
+2020-05-13 17:09:38 INFO  StepDefinitionsBase:282 - CHROME VERSION : 
+2020-05-13 17:09:38 INFO  StepDefinitionsBase:283 - -----------------------------------------------
+2020-05-13 17:09:38 DEBUG StepDefinitionsBase:813 - Writing node names to file /tmp/ojp-dcm-node-names.txt: []
+2020-05-13 17:09:38 INFO  StepDefinitionsBase:281 - ------------TearDown Beginning-----------------------------------
+2020-05-13 17:09:38 INFO  StepDefinitionsBase:282 - CHROME VERSION : 
+2020-05-13 17:09:38 INFO  StepDefinitionsBase:283 - -----------------------------------------------
+2020-05-13 17:09:38 DEBUG StepDefinitionsBase:813 - Writing node names to file /tmp/ojp-dcm-node-names.txt: []
+2020-05-13 17:09:39 INFO  StepDefinitionsBase:281 - ------------TearDown Beginning-----------------------------------
+2020-05-13 17:09:39 INFO  StepDefinitionsBase:282 - CHROME VERSION : 
+2020-05-13 17:09:39 INFO  StepDefinitionsBase:283 - -----------------------------------------------
+2020-05-13 17:09:39 DEBUG StepDefinitionsBase:813 - Writing node names to file /tmp/ojp-dcm-node-names.txt: []
