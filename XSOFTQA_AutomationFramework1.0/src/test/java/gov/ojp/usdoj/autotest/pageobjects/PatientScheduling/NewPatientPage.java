@@ -20,6 +20,7 @@ public class NewPatientPage extends PageObjectBase{
 		super(driver);
         // wait for the dialog to appear
        // waitNormal.until(ExpectedConditions.visibilityOfElementLocated(dialogBy));
+		System.out.println("This is the nnew patient page");
 	}
 
 }
