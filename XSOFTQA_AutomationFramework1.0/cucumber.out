@@ -1,27 +1,18 @@
-2020-05-12 13:39:26 DEBUG PageObjectBase:510 - Sending text: admin
-2020-05-12 13:39:27 DEBUG PageObjectBase:510 - Sending text: pass
-2020-05-12 13:39:33 DEBUG PageObjectBase:131 - Verifying login is successful
-2020-05-12 13:39:33 DEBUG PageObjectBase:136 - Currently logged in..... 
-2020-05-12 13:39:33 DEBUG PageObjectBase:131 - Verifying login is successful
-2020-05-12 13:39:33 DEBUG PageObjectBase:136 - Currently logged in..... 
-2020-05-12 13:39:33 INFO  StepDefinitionsBase:281 - ------------TearDown Beginning-----------------------------------
-2020-05-12 13:39:33 INFO  StepDefinitionsBase:282 - CHROME VERSION : 
-2020-05-12 13:39:33 INFO  StepDefinitionsBase:283 - -----------------------------------------------
-2020-05-12 13:39:33 ERROR StepDefinitionsBase:288 - TEST FAILED
-2020-05-12 13:39:34 ERROR StepDefinitionsBase:312 - -----------------------------------------------
-2020-05-12 13:39:34 ERROR StepDefinitionsBase:313 - PAGE INFORMATION IS FOR  CDwindow-6A97E66491A93EB1EAA470F86C11EC2D
-2020-05-12 13:39:34 ERROR StepDefinitionsBase:314 - PAGE IS ON OpenEMR
-2020-05-12 13:39:34 ERROR StepDefinitionsBase:315 - PAGE URL http://demo.openemr.io/openemr/interface/main/tabs/main.php?token_main=aoc3UkOJBa5SMZRnHkwOBjtpCPAFmw5naqVx4NKN
-2020-05-12 13:40:04 ERROR StepDefinitionsBase:324 - TOTAL Validation ERRORS : 0
-2020-05-12 13:40:04 ERROR StepDefinitionsBase:326 - -----------------------------------------------
-2020-05-12 13:40:04 DEBUG StepDefinitionsBase:813 - Writing node names to file /tmp/ojp-dcm-node-names.txt: []
-2020-05-12 13:40:04 INFO  StepDefinitionsBase:281 - ------------TearDown Beginning-----------------------------------
-2020-05-12 13:40:04 INFO  StepDefinitionsBase:282 - CHROME VERSION : 
-2020-05-12 13:40:04 INFO  StepDefinitionsBase:283 - -----------------------------------------------
-2020-05-12 13:40:04 ERROR StepDefinitionsBase:288 - TEST FAILED
-2020-05-12 13:40:04 DEBUG StepDefinitionsBase:813 - Writing node names to file /tmp/ojp-dcm-node-names.txt: []
-2020-05-12 13:40:04 INFO  StepDefinitionsBase:281 - ------------TearDown Beginning-----------------------------------
-2020-05-12 13:40:04 INFO  StepDefinitionsBase:282 - CHROME VERSION : 
-2020-05-12 13:40:04 INFO  StepDefinitionsBase:283 - -----------------------------------------------
-2020-05-12 13:40:04 ERROR StepDefinitionsBase:288 - TEST FAILED
-2020-05-12 13:40:04 DEBUG StepDefinitionsBase:813 - Writing node names to file /tmp/ojp-dcm-node-names.txt: []
+2020-05-13 15:33:58 DEBUG PageObjectBase:510 - Sending text: admin
+2020-05-13 15:33:59 DEBUG PageObjectBase:510 - Sending text: pass
+2020-05-13 15:34:04 DEBUG PageObjectBase:131 - Verifying login is successful
+2020-05-13 15:34:04 DEBUG PageObjectBase:136 - Currently logged in..... 
+2020-05-13 15:34:05 DEBUG PageObjectBase:131 - Verifying login is successful
+2020-05-13 15:34:05 DEBUG PageObjectBase:136 - Currently logged in..... 
+2020-05-13 15:34:05 INFO  StepDefinitionsBase:281 - ------------TearDown Beginning-----------------------------------
+2020-05-13 15:34:05 INFO  StepDefinitionsBase:282 - CHROME VERSION : 
+2020-05-13 15:34:05 INFO  StepDefinitionsBase:283 - -----------------------------------------------
+2020-05-13 15:34:05 DEBUG StepDefinitionsBase:813 - Writing node names to file /tmp/ojp-dcm-node-names.txt: []
+2020-05-13 15:34:05 INFO  StepDefinitionsBase:281 - ------------TearDown Beginning-----------------------------------
+2020-05-13 15:34:05 INFO  StepDefinitionsBase:282 - CHROME VERSION : 
+2020-05-13 15:34:05 INFO  StepDefinitionsBase:283 - -----------------------------------------------
+2020-05-13 15:34:05 DEBUG StepDefinitionsBase:813 - Writing node names to file /tmp/ojp-dcm-node-names.txt: []
+2020-05-13 15:34:05 INFO  StepDefinitionsBase:281 - ------------TearDown Beginning-----------------------------------
+2020-05-13 15:34:05 INFO  StepDefinitionsBase:282 - CHROME VERSION : 
+2020-05-13 15:34:05 INFO  StepDefinitionsBase:283 - -----------------------------------------------
+2020-05-13 15:34:05 DEBUG StepDefinitionsBase:813 - Writing node names to file /tmp/ojp-dcm-node-names.txt: []

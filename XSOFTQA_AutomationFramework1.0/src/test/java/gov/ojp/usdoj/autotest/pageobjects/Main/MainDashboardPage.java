@@ -43,14 +43,24 @@ public class MainDashboardPage extends PageObjectBase {
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Smith')]")
 	private WebElement lastNameElement;
 	
+	private By pageTitleBy = By.ByXPath.xpath("//div[contains(text(),'Patient:')]");
+	@FindBy(how = How.XPATH, using = "//div[contains(text(),'Patient:')]")
+	private WebElement pageTitleElement;
+	
+	private By flowBoardMenuBy = By.ByXPath.xpath("//div[contains(text(),'Patient:')]");
+	@FindBy(how = How.XPATH, using = "//div[contains(text(),'Patient:')]")
+	private WebElement flowBoardeByElement;
+	
+	private By calendarMonthBy = By.ByXPath.xpath("//td[@class='tdMonthName-small']");
+	@FindBy(how = How.XPATH, using = "//td[@class='tdMonthName-small']")
+	private WebElement calendarMonthElement;
+	
 	//private By anySearchBoxBy = By.id("anySearchBox");
 	
 	public String getFirstName() {
 		if (verifyElementDisplayed(firstNameBy)) {
-			//highLightElement(firstNameElement);
-			//return actualText = readValueFromElement(firstNameElement);
-			log.debug("The Acutal value is ...  " + firstNameElement.getText());
-			return actualText = firstNameElement.getText();
+			highLightElement(firstNameElement);
+			return actualText = readValueFromElement(firstNameElement);
 			
 		}
 		return actualText;
@@ -58,21 +68,38 @@ public class MainDashboardPage extends PageObjectBase {
 		
 	}
 	
-	public String getLastName() {
-		if (verifyElementDisplayed(lastNameBy)) {
-			//highLightElement(lastNameElement);
-			//return actualText = readValueFromElement(lastNameElement);
-			log.debug("The Acutal value is ...  " + lastNameElement.getText());
-			return actualText = lastNameElement.getText();
-		}
-		return actualText;
+//	public String getLastName() {
+//		if (verifyElementDisplayed(lastNameBy)) {
+//			highLightElement(lastNameElement);
+//			//return actualText = readValueFromElement(lastNameElement);
+//			log.debug("The Acutal value is ...  " + lastNameElement.getText());
+//			return actualText = lastNameElement.getText();
+//		}
+//		return actualText;
 		
+//	}
+	
+	
+	public boolean iscalendarMenuDisplay() {
+		if (verifyElementDisplayed(calendarMenuBy)) {
+			highLightElement(calendarMenuElement);
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean iscalendarMonthDisplay() {
+		if (verifyElementDisplayed(calendarMonthBy)) {
+			highLightElement(calendarMonthElement);
+			return true;
+		}
+		return false;
 	}
 	
 	
-	public boolean iscalendarMenutDisplay() {
-		if (verifyElementDisplayed(calendarMenuBy)) {
-			highLightElement(calendarMenuElement);
+	public boolean isflowBoardMenutDisplay() {
+		if (verifyElementDisplayed(flowBoardMenuBy)) {
+			highLightElement(flowBoardeByElement);
 			return true;
 		}
 		return false;
@@ -107,15 +134,9 @@ public class MainDashboardPage extends PageObjectBase {
 	public void clickMenu() {
 		webDriver.findElement(calendarMenuBy).click();
 	}
-
-//	public String getFirstName() {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
-//
-//	public String getLastName() {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
+	
+	public String getTitle() {
+		return webDriver.findElement(pageTitleBy).getText();
+		}
 
 }
